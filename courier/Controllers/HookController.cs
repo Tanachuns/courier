@@ -40,7 +40,7 @@ public class HookController(IRecieveService recieveService) : Controller
             Log.Information("Starting webhook");
             Log.Information(JsonConvert.SerializeObject(requestDto));
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
-
+            Log.Information("signature: " + signature);
             if (string.IsNullOrEmpty(signature)||recieveService.ValidateSignature(requestDto,signature))
             {
                 Log.Error("Invalid signature");
