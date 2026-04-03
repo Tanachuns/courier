@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using courier.Models.Dto;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -15,14 +16,14 @@ public class HookController : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public IActionResult Post(object tt)
+    public IActionResult Index([FromBody]HookRequestDto tt)
     {
         try
         {
             var st = JsonConvert.SerializeObject(tt);
             Log.Information("hooked");            
             Log.Information(st);
-            return Ok(new { status = "hooked" });
+            return Ok(tt);
         }
         catch (Exception e)
         {

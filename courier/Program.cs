@@ -18,10 +18,6 @@ Log.Logger = new LoggerConfiguration()
         shared: true
     )
     .WriteTo.Console()
-    .WriteTo.GoogleCloudLogging(
-        projectId: "courier",
-        logName: "flow"
-    )
     .CreateLogger();
 
 

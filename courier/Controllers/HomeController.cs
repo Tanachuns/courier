@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using courier.Models;
 
 namespace courier.Controllers;
 
