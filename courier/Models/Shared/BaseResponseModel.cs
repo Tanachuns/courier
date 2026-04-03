@@ -2,7 +2,7 @@
 
 public class BaseResponseModel
 {
-    public bool isSuccess { get; set; }
-    public string message { get; set; }
-    public object data { get; set; }
+    public bool? IsSuccess { get; set; }
+    public string? Message { get; set; }
+    public object? Data { get; set; }
 }

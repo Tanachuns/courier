@@ -11,8 +11,17 @@ using Serilog;
 
 namespace courier.Controllers;
 
-public class HookController(IRecieveService RecieveService) : Controller
+public class HookController : Controller
 {
+
+    private readonly IRecieveService RecieveService;
+    private readonly ISendService SendService;
+    public HookController(IRecieveService recieveService,ISendService sendService) 
+    {
+        RecieveService = recieveService;
+        SendService = sendService;
+        
+    }
     [HttpGet(Name = "HealthCheck")]
     public IActionResult HealthCheck()
     {
@@ -34,29 +43,46 @@ public class HookController(IRecieveService RecieveService) : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public async Task<IActionResult> Index([FromBody] object request)
+    public async Task<IActionResult> Index([FromBody] object? request)
     {
         BaseResponseModel response = new BaseResponseModel();
         try
         {
             Log.Information("Starting webhook");
-            string rawBody = request.ToString().Replace("\r\n","");
+            if (request == null)
+            {
+                response.IsSuccess = false;
+                response.Message = "request body is required";
+                Log.Error(response.Message);
+                return BadRequest(response);
+            }
+            string? rawBody = request.ToString()?.Replace("\r\n","");
             Log.Information("request: " + rawBody);
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
             Request.EnableBuffering();
-           
             Log.Information("signature: " + signature);
             if (string.IsNullOrEmpty(signature)||!RecieveService.ValidateSignature(rawBody,signature))
             {
-                Log.Error("Invalid signature");
-                response.isSuccess = false;
-                response.message = "Invalid signature";
+                response.IsSuccess = false;
+                response.Message = "Invalid signature";
+                Log.Error(response.Message);
                 return BadRequest(response);
             }
+            HookRequestDto requestDto = JsonConvert.DeserializeObject<HookRequestDto>(rawBody);
+
+            if (requestDto == null)
+            {
+                
+                foreach (var eventDto in requestDto.events)
+                {
+                    SendService.SetReplyToken(eventDto.replytoken);
+                    var result = await SendService.Send("Ok jaa", "text");
+                    Log.Information(result);
+                }
+            }
+            
             Log.Information("Happy");
-            response.isSuccess = true;
-            response.data = null;
-            return Ok(response);
+            return Ok("Happy");
         }
         catch (Exception e)
         {

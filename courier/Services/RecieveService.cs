@@ -11,7 +11,7 @@ namespace courier.Services;
 
 public class ReceiveService : IRecieveService
 {
-    public bool ValidateSignature(string body ,string signature)
+    public bool ValidateSignature(string? body ,string signature)
     {
         try
         {
