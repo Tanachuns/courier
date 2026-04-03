@@ -1,3 +1,5 @@
+using courier.Interfaces;
+using courier.Services;
 using Serilog;
 using Serilog.Sinks.GoogleCloudLogging;
 
@@ -20,6 +22,8 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 
+// Register services
+builder.Services.AddScoped<IRecieveService, RecieveService>();
 
 var app = builder.Build();
 

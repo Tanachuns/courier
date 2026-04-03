@@ -1,5 +1,7 @@
 ﻿using System.Net;
 using courier.Models.Dto;
+using courier.Models.Http;
+using courier.Services;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -7,23 +9,50 @@ using Serilog;
 
 namespace courier.Controllers;
 
-public class HookController : Controller
+public class HookController(RecieveService recieveService) : Controller
 {
     [HttpGet(Name = "HealthCheck")]
     public IActionResult HealthCheck()
     {
+        bool isUnhealthy = false;
+        var secret = Environment.GetEnvironmentVariable("LINE_SECRET");
+        if (string.IsNullOrEmpty(secret))
+        {
+            Log.Error("Invalid secret environment variable");
+            isUnhealthy = true;
+        }
+        
+        if (isUnhealthy)
+        {
+            return StatusCode(503, "You are unhealthy");
+        }
+        
         return Ok(new {status="Fine"});
     }
     
     [HttpPost(Name = "Webhook")]
     public IActionResult Index([FromBody]HookRequestDto requestDto)
     {
+        BaseResponseModel response = new BaseResponseModel();
         try
         {
-            var st = JsonConvert.SerializeObject(requestDto);
-            Log.Information("hooked");            
-            Log.Information(st);
-            return Ok(requestDto);
+            Log.Information("Starting webhook");
+            Log.Information(JsonConvert.SerializeObject(requestDto));
+            var signature = Request.Headers["x-line-signature"].FirstOrDefault();
+
+            if (string.IsNullOrEmpty(signature)||recieveService.ValidateSignature(requestDto,signature))
+            {
+                Log.Error("Invalid signature");
+                response.isSuccess = false;
+                response.message = "Invalid signature";
+                return BadRequest(response);
+            }
+            
+            
+            Log.Error("Happy");
+            response.isSuccess = true;
+            response.data = requestDto;
+            return Ok(response);
         }
         catch (Exception e)
         {
