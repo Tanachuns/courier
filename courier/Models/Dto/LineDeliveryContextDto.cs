@@ -2,5 +2,5 @@
 
 public class LineDeliveryContextDto
 {
-    public bool IsRedelivery {get; set;}
+    public bool? IsRedelivery {get; set;}
 }

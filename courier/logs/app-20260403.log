@@ -48,3 +48,23 @@
 2026-04-03 12:00:46.294 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":"group","UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
 2026-04-03 12:01:37.273 +00:00 [INF] hooked
 2026-04-03 12:01:37.274 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:34:25.210 +00:00 [ERR] Invalid secret environment variable
+2026-04-03 12:36:00.149 +00:00 [ERR] Invalid secret environment variable
+2026-04-03 12:45:25.135 +00:00 [INF] Starting webhook
+2026-04-03 12:45:25.269 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:45:25.272 +00:00 [ERR] Invalid signature
+2026-04-03 12:47:49.015 +00:00 [INF] Starting webhook
+2026-04-03 12:47:49.146 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:47:49.148 +00:00 [ERR] Invalid signature
+2026-04-03 12:48:26.940 +00:00 [INF] Starting webhook
+2026-04-03 12:48:27.089 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:48:27.091 +00:00 [ERR] Invalid signature
+2026-04-03 12:48:33.477 +00:00 [INF] Starting webhook
+2026-04-03 12:48:33.479 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:48:33.480 +00:00 [ERR] Invalid signature
+2026-04-03 12:49:01.135 +00:00 [INF] Starting webhook
+2026-04-03 12:49:01.276 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:49:01.277 +00:00 [ERR] Invalid signature
+2026-04-03 12:50:24.854 +00:00 [INF] Starting webhook
+2026-04-03 12:50:25.000 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:50:25.001 +00:00 [ERR] Happy
