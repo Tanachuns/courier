@@ -1,7 +1,29 @@
+using Serilog;
+using Serilog.Sinks.GoogleCloudLogging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.File(
+        path: "logs/app-.log",
+        rollingInterval: RollingInterval.Day,
+        retainedFileCountLimit: 7,
+        fileSizeLimitBytes: 10_000_000,
+        rollOnFileSizeLimit: true,
+        shared: true
+    )
+    .WriteTo.Console()
+    .WriteTo.GoogleCloudLogging(
+        projectId: "courier",
+        logName: "flow"
+    )
+    .CreateLogger();
+
 
 var app = builder.Build();
 
