@@ -1,10 +1,7 @@
-﻿using System.Net;
-using System.Text;
-using courier.Interfaces;
+﻿using courier.Interfaces;
 using courier.Models.Dto;
 using courier.Models.Http;
 using courier.Services;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Serilog;
@@ -14,12 +11,12 @@ namespace courier.Controllers;
 public class HookController : Controller
 {
 
-    private readonly IRecieveService RecieveService;
-    private readonly ISendService SendService;
+    private readonly IRecieveService _recieveService;
+    private readonly ISendService _sendService;
     public HookController(IRecieveService recieveService,ISendService sendService) 
     {
-        RecieveService = recieveService;
-        SendService = sendService;
+        _recieveService = recieveService;
+        _sendService = sendService;
         
     }
     [HttpGet(Name = "HealthCheck")]
@@ -49,12 +46,11 @@ public class HookController : Controller
         try
         {
             Log.Information("Starting webhook");
-
             string? rawBody =request.ToString()?.Replace("\r\n","");
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
             Log.Information("request: " + rawBody);
             Log.Information("signature: " + signature);
-            if (string.IsNullOrEmpty(signature)||!RecieveService.ValidateSignature(rawBody,signature))
+            if (string.IsNullOrEmpty(signature)||!_recieveService.ValidateSignature(rawBody,signature))
             {
                 response.IsSuccess = false;
                 response.Message = "Invalid signature";
@@ -62,14 +58,15 @@ public class HookController : Controller
                 return BadRequest(response);
             }
 
-            HookRequestDto requestDto = JsonConvert.DeserializeObject<HookRequestDto>(request.ToString());
+            HookRequestDto? requestDto = JsonConvert.DeserializeObject<HookRequestDto>(request.ToString() ?? "");
             if (requestDto != null)
             {
-                foreach (var eventDto in requestDto.events)
+                foreach (LineEventDto eventDto in requestDto.events)
                 {
-                    SendService.SetReplyToken(eventDto.replytoken);
-                    var result = await SendService.Send("Ok jaa", "text");
-                    Log.Information(result);
+                    var arg = new ArguementService(eventDto);
+                    // SendService.SetReplyToken(eventDto.replytoken);
+                    // var result = await SendService.Send("Ok jaa", "text");
+                    // Log.Information(result);
                 }
             }
             

@@ -6,4 +6,4 @@ riderModule.iml
 */appsettings.*.json
 */logs/*
 */.env
-
+/courier/logs/

@@ -1,1 +1,7 @@
-﻿init
+﻿noted .env
+
+LINE_SECRET=
+
+LINE_CHANNEL_ACCESS_TOKEN=
+
+LINE_BASEURL=
