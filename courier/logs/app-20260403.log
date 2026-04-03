@@ -191,3 +191,23 @@
 2026-04-03 14:31:27.925 +00:00 [INF] Starting webhook
 2026-04-03 14:31:30.340 +00:00 [INF] signature: GhRKmvmHys4Pi8DxkF4+EayaH0OqtJtaZxgTD9fMDLs=
 2026-04-03 14:31:35.428 +00:00 [ERR] Happy
+2026-04-03 14:42:14.065 +00:00 [INF] Starting webhook
+2026-04-03 14:42:14.190 +00:00 [INF] request: {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607999411448709261","Text":"ทดสอบ"},"TimeStamp":1775227193633,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"660c755d94f543deac1768fb48c5174d","Mode":"active","webhookeventid":"01KN9WJJDHETQRBSDCAC93QYN4","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:42:15.961 +00:00 [INF] signature: ud84yrOhpZTl19FDaPlOXTsKlWE+jCGvM+wZDa6o4AY=
+2026-04-03 14:42:29.298 +00:00 [ERR] Invalid signature
+2026-04-03 14:42:41.774 +00:00 [INF] Starting webhook
+2026-04-03 14:42:41.775 +00:00 [INF] request: {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 14:42:42.785 +00:00 [INF] signature: ud84yrOhpZTl19FDaPlOXTsKlWE+jCGvM+wZDa6o4AY=
+2026-04-03 14:42:43.303 +00:00 [ERR] Invalid signature
+2026-04-03 14:43:16.326 +00:00 [INF] Starting webhook
+2026-04-03 14:43:16.566 +00:00 [INF] request: {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607999411448709261","Text":"ทดสอบ"},"TimeStamp":1775227193633,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"660c755d94f543deac1768fb48c5174d","Mode":"active","webhookeventid":"01KN9WJJDHETQRBSDCAC93QYN4","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:43:19.327 +00:00 [INF] signature: ud84yrOhpZTl19FDaPlOXTsKlWE+jCGvM+wZDa6o4AY=
+2026-04-03 14:43:19.839 +00:00 [ERR] Invalid signature
+2026-04-03 14:43:23.490 +00:00 [INF] Starting webhook
+2026-04-03 14:43:23.492 +00:00 [INF] request: {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607999411448709261","Text":"ทดสอบ"},"TimeStamp":1775227193633,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"660c755d94f543deac1768fb48c5174d","Mode":"active","webhookeventid":"01KN9WJJDHETQRBSDCAC93QYN4","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:43:27.171 +00:00 [INF] signature: ud84yrOhpZTl19FDaPlOXTsKlWE+jCGvM+wZDa6o4AY=
+2026-04-03 14:44:22.463 +00:00 [ERR] Invalid signature
+2026-04-03 14:46:30.560 +00:00 [INF] Starting webhook
+2026-04-03 14:46:30.695 +00:00 [INF] request: {"destination":"U8e742f61d673b39c7fff3cecb7536ef0","events":[]}
+2026-04-03 14:46:32.180 +00:00 [INF] signature: GhRKmvmHys4Pi8DxkF4+EayaH0OqtJtaZxgTD9fMDLs=
+2026-04-03 14:46:33.968 +00:00 [INF] Happy
