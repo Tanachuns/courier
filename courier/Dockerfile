@@ -7,8 +7,8 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["courier/courier.csproj", "courier/"]
-RUN dotnet restore "courier/courier.csproj"
+COPY ["./courier.csproj", "courier/"]
+RUN dotnet restore "./courier.csproj"
 COPY . .
 WORKDIR "/src/courier"
 RUN dotnet build "./courier.csproj" -c $BUILD_CONFIGURATION -o /app/build
@@ -21,21 +21,3 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "courier.dll"]
-
-
-# runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
-EXPOSE 8080
-
-# build
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
-COPY . .
-RUN dotnet publish -c Release -o /app/publish
-
-# final
-FROM base AS final
-WORKDIR /app
-COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "YourApp.dll"]
