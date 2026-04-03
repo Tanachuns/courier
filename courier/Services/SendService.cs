@@ -35,8 +35,8 @@ public class SendService : ISendService
     public SendService()
     {
         Env.Load();
-        _baseUrl = Environment.GetEnvironmentVariable("LINE_CHANNEL_ACCESS_TOKEN")??"";
-        _channelAccessToken = Environment.GetEnvironmentVariable("LINE_BASEURL")??"";
+        _baseUrl = Environment.GetEnvironmentVariable("LINE_BASEURL")??"";
+        _channelAccessToken = Environment.GetEnvironmentVariable("LINE_CHANNEL_ACCESS_TOKEN")??"";
     }
 
     public void SetReplyToken(string replyToken)
@@ -54,11 +54,15 @@ public class SendService : ISendService
           messageDto.messages =  new MessageDto[1]{new MessageDto(message,type)};
           HttpContent content = new StringContent( JsonConvert.SerializeObject(messageDto), Encoding.UTF8, "application/json");
           client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _channelAccessToken);
-          HttpResponseMessage response = await client.PostAsync("/reply",content);
-          
-          response.EnsureSuccessStatusCode();
+          HttpResponseMessage response = await client.PostAsync("reply",content);
           string result = response.Content.ReadAsStringAsync().Result;
+          
+          if (!response.IsSuccessStatusCode)
+          {
+             throw  new Exception(result);
+          }
           return result; 
+          
         }
         
     }

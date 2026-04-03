@@ -15,7 +15,7 @@ public class ReceiveService : IRecieveService
     {
         try
         {
-            DotNetEnv.Env.Load();
+           Env.Load();
             var secret = Environment.GetEnvironmentVariable("LINE_SECRET") ?? "";
             byte[] keyBytes = Encoding.UTF8.GetBytes(secret);
     

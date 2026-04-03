@@ -43,23 +43,16 @@ public class HookController : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public async Task<IActionResult> Index([FromBody] object? request)
+    public async Task<IActionResult> Index([FromBody] object request)
     {
         BaseResponseModel response = new BaseResponseModel();
         try
         {
             Log.Information("Starting webhook");
-            if (request == null)
-            {
-                response.IsSuccess = false;
-                response.Message = "request body is required";
-                Log.Error(response.Message);
-                return BadRequest(response);
-            }
-            string? rawBody = request.ToString()?.Replace("\r\n","");
-            Log.Information("request: " + rawBody);
+
+            string? rawBody =request.ToString()?.Replace("\r\n","");
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
-            Request.EnableBuffering();
+            Log.Information("request: " + rawBody);
             Log.Information("signature: " + signature);
             if (string.IsNullOrEmpty(signature)||!RecieveService.ValidateSignature(rawBody,signature))
             {
@@ -68,11 +61,10 @@ public class HookController : Controller
                 Log.Error(response.Message);
                 return BadRequest(response);
             }
-            HookRequestDto requestDto = JsonConvert.DeserializeObject<HookRequestDto>(rawBody);
 
-            if (requestDto == null)
+            HookRequestDto requestDto = JsonConvert.DeserializeObject<HookRequestDto>(request.ToString());
+            if (requestDto != null)
             {
-                
                 foreach (var eventDto in requestDto.events)
                 {
                     SendService.SetReplyToken(eventDto.replytoken);
@@ -86,8 +78,10 @@ public class HookController : Controller
         }
         catch (Exception e)
         {
+            response.Message = e.Message;
+            response.IsSuccess = false;
             Log.Error(e.Message);
-            return StatusCode(500, e.Message);
+            return StatusCode(500, response);
         }
     }
 }
