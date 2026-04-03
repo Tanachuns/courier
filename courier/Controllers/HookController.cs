@@ -40,9 +40,10 @@ public class HookController(IRecieveService recieveService) : Controller
         try
         {
             Log.Information("Starting webhook");
+            string rawBody = JsonConvert.SerializeObject(request);
+            Log.Information("request: " + rawBody);
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
             Request.EnableBuffering();
-            string rawBody = JsonConvert.SerializeObject(request);
            
             Log.Information("signature: " + signature);
             if (string.IsNullOrEmpty(signature)||!recieveService.ValidateSignature(rawBody,signature))
