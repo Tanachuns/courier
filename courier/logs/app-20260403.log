@@ -68,3 +68,12 @@
 2026-04-03 12:50:24.854 +00:00 [INF] Starting webhook
 2026-04-03 12:50:25.000 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
 2026-04-03 12:50:25.001 +00:00 [ERR] Happy
+2026-04-03 13:14:16.165 +00:00 [ERR] Invalid secret environment variable
+2026-04-03 13:14:18.474 +00:00 [ERR] Invalid secret environment variable
+2026-04-03 13:15:38.496 +00:00 [INF] Starting webhook
+2026-04-03 13:15:38.630 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:15:38.631 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:22:01.001 +00:00 [INF] Starting webhook
+2026-04-03 13:22:01.131 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:22:01.133 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:22:15.519 +00:00 [ERR] Happy

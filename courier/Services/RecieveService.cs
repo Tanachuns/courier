@@ -10,13 +10,25 @@ public class RecieveService : IRecieveService
 {
     public  bool ValidateSignature(HookRequestDto request,string signature)
     {
-        var body = JsonConvert.SerializeObject(request);
+        DotNetEnv.Env.Load();
+        var requestString = JsonConvert.SerializeObject(request);
         var secret = Environment.GetEnvironmentVariable("LINE_SECRET");
-        var keyBytes = Encoding.UTF8.GetBytes(secret);
-        var bodyBytes = Encoding.UTF8.GetBytes(body);
-        using var hmac = new HMACSHA256(keyBytes);
-        var hash = hmac.ComputeHash(bodyBytes);
-        var base64String = Convert.ToBase64String(hash);
-        return signature != base64String;
+        try
+        {
+            var key = Encoding.UTF8.GetBytes(secret);
+            var body = Encoding.UTF8.GetBytes(requestString);
+
+            using (HMACSHA256 hmac = new HMACSHA256(key))
+            {
+                var hash = hmac.ComputeHash(body, 0, body.Length);
+                var xLineBytes = Convert.FromBase64String(signature);
+                return xLineBytes.Equals(hash);
+            }
+        }
+        catch
+        {
+            return false;
+        }
     }
+   
 }

@@ -16,6 +16,7 @@ public class HookController(IRecieveService recieveService) : Controller
     public IActionResult HealthCheck()
     {
         bool isUnhealthy = false;
+        DotNetEnv.Env.Load();
         var secret = Environment.GetEnvironmentVariable("LINE_SECRET");
         if (string.IsNullOrEmpty(secret))
         {
