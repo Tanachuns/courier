@@ -23,7 +23,7 @@ public class HookController : Controller
             var st = JsonConvert.SerializeObject(requestDto);
             Log.Information("hooked");            
             Log.Information(st);
-            return Ok(st);
+            return Ok(requestDto);
         }
         catch (Exception e)
         {

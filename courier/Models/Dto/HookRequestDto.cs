@@ -2,6 +2,6 @@
 
 public class HookRequestDto
 {
-  public string destination { get; set; }
-  public LineEventDto[] events { get; set; }
+  public required string destination { get; set; }
+    public required LineEventDto[] events { get; set; }
 }
