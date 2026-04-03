@@ -46,3 +46,5 @@
 2026-04-03 11:59:48.767 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Mode":"active"}]}
 2026-04-03 12:00:46.263 +00:00 [INF] hooked
 2026-04-03 12:00:46.294 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":"group","UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 12:01:37.273 +00:00 [INF] hooked
+2026-04-03 12:01:37.274 +00:00 [INF] {"destination":"xxxxxxxxxx","events":[{"Type":"message","Message":{"Type":"text","Id":"468789577898262530","Text":"Chicken, please."},"TimeStamp":1692251666727,"Source":{"Type":null,"UserId":"U4af4980629...","GroupId":"Ca56f94637c..."},"replytoken":"38ef843bde154d9b91c21320ffd17a0f","Mode":"active","webhookeventid":"01H810YECXQQZ37VAXPF6H9E6T","DeliveryContext":{"IsRedelivery":false}}]}
