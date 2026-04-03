@@ -4,5 +4,5 @@ namespace courier.Interfaces;
 
 public interface IRecieveService
 {
-    public bool ValidateSignature(HookRequestDto request, string signature);
+    public bool ValidateSignature(string body, string signature);
 }

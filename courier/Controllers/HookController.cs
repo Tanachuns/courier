@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Text;
 using courier.Interfaces;
 using courier.Models.Dto;
 using courier.Models.Http;
@@ -33,25 +34,27 @@ public class HookController(IRecieveService recieveService) : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public IActionResult Index([FromBody]HookRequestDto requestDto)
+    public async Task<IActionResult> Index([FromBody] HookRequestDto request)
     {
         BaseResponseModel response = new BaseResponseModel();
         try
         {
             Log.Information("Starting webhook");
-            Log.Information(JsonConvert.SerializeObject(requestDto));
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
+            Request.EnableBuffering();
+            string rawBody = JsonConvert.SerializeObject(request);
+           
             Log.Information("signature: " + signature);
-            if (string.IsNullOrEmpty(signature)||recieveService.ValidateSignature(requestDto,signature))
+            if (string.IsNullOrEmpty(signature)||!recieveService.ValidateSignature(rawBody,signature))
             {
                 Log.Error("Invalid signature");
                 response.isSuccess = false;
                 response.message = "Invalid signature";
                 return BadRequest(response);
             }
-            Log.Error("Happy");
+            Log.Information("Happy");
             response.isSuccess = true;
-            response.data = requestDto;
+            response.data = null;
             return Ok(response);
         }
         catch (Exception e)

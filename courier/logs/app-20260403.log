@@ -77,3 +77,117 @@
 2026-04-03 13:22:01.131 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
 2026-04-03 13:22:01.133 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
 2026-04-03 13:22:15.519 +00:00 [ERR] Happy
+2026-04-03 13:25:07.584 +00:00 [INF] Starting webhook
+2026-04-03 13:25:07.586 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:25:07.587 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeB
+2026-04-03 13:25:10.264 +00:00 [ERR] Happy
+2026-04-03 13:25:14.448 +00:00 [INF] Starting webhook
+2026-04-03 13:25:14.448 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:25:14.450 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeB
+2026-04-03 13:25:14.470 +00:00 [ERR] Happy
+2026-04-03 13:25:29.255 +00:00 [INF] Starting webhook
+2026-04-03 13:25:29.256 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:25:29.257 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeB
+2026-04-03 13:25:29.277 +00:00 [ERR] Happy
+2026-04-03 13:25:36.948 +00:00 [INF] Starting webhook
+2026-04-03 13:25:36.949 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:25:36.950 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeB
+2026-04-03 13:25:51.946 +00:00 [ERR] Happy
+2026-04-03 13:25:56.043 +00:00 [INF] Starting webhook
+2026-04-03 13:25:56.044 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:25:56.045 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeB
+2026-04-03 13:27:07.540 +00:00 [INF] Starting webhook
+2026-04-03 13:27:07.669 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:27:07.671 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeB
+2026-04-03 13:27:13.859 +00:00 [ERR] Invalid signature
+2026-04-03 13:27:21.367 +00:00 [INF] Starting webhook
+2026-04-03 13:27:21.368 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:27:21.369 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:27:29.174 +00:00 [ERR] Invalid signature
+2026-04-03 13:27:34.665 +00:00 [INF] Starting webhook
+2026-04-03 13:27:34.666 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607989780269761059","Text":"สด"},"TimeStamp":1775221452990,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1dc17250e2444ddab16bd3e92dbe276d","Mode":"active","webhookeventid":"01KN9Q3CJXBRG9MFQ3HVJAGGKZ","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:27:34.668 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:29:01.943 +00:00 [ERR] Invalid signature
+2026-04-03 13:29:11.092 +00:00 [INF] Starting webhook
+2026-04-03 13:29:11.094 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:29:11.096 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:29:19.192 +00:00 [ERR] Invalid signature
+2026-04-03 13:33:06.757 +00:00 [INF] Starting webhook
+2026-04-03 13:33:06.886 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:33:06.887 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:39:48.036 +00:00 [ERR] Happy
+2026-04-03 13:40:01.213 +00:00 [INF] Starting webhook
+2026-04-03 13:40:01.213 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:40:01.215 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:41:13.789 +00:00 [INF] Starting webhook
+2026-04-03 13:41:13.913 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:41:13.914 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:46:37.574 +00:00 [INF] Starting webhook
+2026-04-03 13:46:37.709 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:46:37.711 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:47:59.413 +00:00 [ERR] Happy
+2026-04-03 13:49:57.361 +00:00 [INF] Starting webhook
+2026-04-03 13:49:57.484 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:49:57.485 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:49:57.569 +00:00 [ERR] Invalid signature
+2026-04-03 13:50:06.966 +00:00 [INF] Starting webhook
+2026-04-03 13:50:06.996 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[]}
+2026-04-03 13:50:07.005 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:50:29.825 +00:00 [ERR] Invalid signature
+2026-04-03 13:50:53.445 +00:00 [INF] Starting webhook
+2026-04-03 13:50:53.451 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:50:53.452 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:51:41.405 +00:00 [INF] Starting webhook
+2026-04-03 13:51:41.537 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:51:41.538 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 13:51:43.463 +00:00 [ERR] Invalid signature
+2026-04-03 13:53:36.465 +00:00 [INF] Starting webhook
+2026-04-03 13:53:36.592 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 13:59:01.763 +00:00 [INF] Starting webhook
+2026-04-03 13:59:01.902 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:01:02.644 +00:00 [INF] Starting webhook
+2026-04-03 14:01:02.768 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:01:02.774 +00:00 [ERR] Invalid signature
+2026-04-03 14:01:09.064 +00:00 [INF] Starting webhook
+2026-04-03 14:01:09.065 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:01:30.674 +00:00 [ERR] Invalid signature
+2026-04-03 14:06:58.534 +00:00 [INF] Starting webhook
+2026-04-03 14:06:58.663 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:06:58.666 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:06:58.668 +00:00 [ERR] Invalid signature
+2026-04-03 14:07:09.294 +00:00 [INF] Starting webhook
+2026-04-03 14:07:09.295 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:09:22.623 +00:00 [INF] Starting webhook
+2026-04-03 14:09:22.755 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:09:30.095 +00:00 [ERR] Specified method is not supported.
+2026-04-03 14:13:13.215 +00:00 [INF] Starting webhook
+2026-04-03 14:13:13.339 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:13:13.341 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:13:13.343 +00:00 [ERR] Invalid signature
+2026-04-03 14:13:18.214 +00:00 [INF] Starting webhook
+2026-04-03 14:13:18.215 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:14:56.323 +00:00 [INF] Starting webhook
+2026-04-03 14:14:56.480 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:14:59.948 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:20:26.990 +00:00 [INF] Starting webhook
+2026-04-03 14:20:27.159 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:21:43.842 +00:00 [INF] Starting webhook
+2026-04-03 14:21:43.981 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:22:33.505 +00:00 [INF] Starting webhook
+2026-04-03 14:22:33.626 +00:00 [INF] {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"607990151297630416","Text":"สสสส"},"TimeStamp":1775221674124,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"1a3cb818d82b4637983d7ee2580006c9","Mode":"active","webhookeventid":"01KN9QA48MQW9NTPYV6B82MT2S","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:24:06.747 +00:00 [INF] Starting webhook
+2026-04-03 14:24:16.333 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:24:27.113 +00:00 [ERR] Invalid signature
+2026-04-03 14:24:30.082 +00:00 [INF] Starting webhook
+2026-04-03 14:24:33.516 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:25:41.133 +00:00 [INF] Starting webhook
+2026-04-03 14:25:45.651 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:26:28.149 +00:00 [ERR] Invalid signature
+2026-04-03 14:26:31.874 +00:00 [INF] Starting webhook
+2026-04-03 14:26:34.764 +00:00 [INF] signature: /WRn0XIJPILZn+p5MANhaFngkbVXlgl8ia29QyaZeBI=
+2026-04-03 14:28:33.742 +00:00 [INF] Starting webhook
+2026-04-03 14:28:37.394 +00:00 [INF] signature: GhRKmvmHys4Pi8DxkF4+EayaH0OqtJtaZxgTD9fMDLs=
+2026-04-03 14:28:42.195 +00:00 [ERR] Happy
+2026-04-03 14:31:27.925 +00:00 [INF] Starting webhook
+2026-04-03 14:31:30.340 +00:00 [INF] signature: GhRKmvmHys4Pi8DxkF4+EayaH0OqtJtaZxgTD9fMDLs=
+2026-04-03 14:31:35.428 +00:00 [ERR] Happy

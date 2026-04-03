@@ -1,34 +1,39 @@
-﻿using System.Security.Cryptography;
+﻿using System.Buffers.Text;
+using System.Security.Cryptography;
 using System.Text;
 using courier.Interfaces;
 using courier.Models.Dto;
+using DotNetEnv;
 using Newtonsoft.Json;
+using Serilog;
 
 namespace courier.Services;
 
 public class RecieveService : IRecieveService
 {
-    public  bool ValidateSignature(HookRequestDto request,string signature)
+    public bool ValidateSignature(string body ,string signature)
     {
-        DotNetEnv.Env.Load();
-        var requestString = JsonConvert.SerializeObject(request);
-        var secret = Environment.GetEnvironmentVariable("LINE_SECRET");
         try
         {
-            var key = Encoding.UTF8.GetBytes(secret);
-            var body = Encoding.UTF8.GetBytes(requestString);
+            DotNetEnv.Env.Load();
+            var secret = Environment.GetEnvironmentVariable("LINE_SECRET") ?? "";
+            byte[] keyBytes = Encoding.UTF8.GetBytes(secret);
+    
+            byte[] messageBytes = Encoding.UTF8.GetBytes(body);
 
-            using (HMACSHA256 hmac = new HMACSHA256(key))
+            using (var hmac = new HMACSHA256(keyBytes))
             {
-                var hash = hmac.ComputeHash(body, 0, body.Length);
-                var xLineBytes = Convert.FromBase64String(signature);
-                return xLineBytes.Equals(hash);
+                byte[] hashBytes = hmac.ComputeHash(messageBytes);
+                string computedSignature = Convert.ToBase64String(hashBytes);
+                return  CryptographicOperations.FixedTimeEquals(
+                    Encoding.UTF8.GetBytes(computedSignature), 
+                    Encoding.UTF8.GetBytes(signature)
+                );
             }
         }
-        catch
+        catch 
         {
             return false;
         }
     }
-   
 }
