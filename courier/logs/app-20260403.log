@@ -211,3 +211,42 @@
 2026-04-03 14:46:30.695 +00:00 [INF] request: {"destination":"U8e742f61d673b39c7fff3cecb7536ef0","events":[]}
 2026-04-03 14:46:32.180 +00:00 [INF] signature: GhRKmvmHys4Pi8DxkF4+EayaH0OqtJtaZxgTD9fMDLs=
 2026-04-03 14:46:33.968 +00:00 [INF] Happy
+2026-04-03 14:55:29.438 +00:00 [INF] Starting webhook
+2026-04-03 14:55:29.566 +00:00 [INF] request: {"destination":"U92523a80a7528a55d42bd2c3c681f7ca","events":[{"Type":"message","Message":{"Type":"text","Id":"608000709770084353","Text":"ทดสอบ"},"TimeStamp":1775227967295,"Source":{"Type":"user","UserId":"U118c9b67eaaa6d92ea82dbd6446a3f67","GroupId":null},"replytoken":"406ef006ee0a4ee494d1230274ca7769","Mode":"active","webhookeventid":"01KN9XA69SMF3J0J8KRBECZGH1","DeliveryContext":{"IsRedelivery":false}}]}
+2026-04-03 14:55:30.940 +00:00 [INF] signature: avYJ4Am+amH4cnm6JV4qw34wWjvNAd07jGqK6gUerkM=
+2026-04-03 14:55:31.517 +00:00 [ERR] Invalid signature
+2026-04-03 14:57:59.551 +00:00 [INF] Starting webhook
+2026-04-03 14:57:59.659 +00:00 [INF] request: {}
+2026-04-03 14:58:24.569 +00:00 [INF] Starting webhook
+2026-04-03 14:58:24.691 +00:00 [INF] request: {"ValueKind":1}
+2026-04-03 14:59:31.563 +00:00 [INF] Starting webhook
+2026-04-03 14:59:31.597 +00:00 [INF] request: {
+    "destination": "U92523a80a7528a55d42bd2c3c681f7ca",
+    "events": [
+        {
+            "type": "message",
+            "message": {
+                "type": "text",
+                "id": "608000709770084353",
+                "quoteToken": "_uvMi36y9b-b7_tGn0CcKlV8OZQ6N3-R2f9fZEdDna2meYsVheEP5oicJ0qJKz87hGGkNz6ZGr9Kzwyxyf2rVpi0FD4tl-mlZ6qsOGL_e85CZZKA22Ms5l83enFzBYqoQyEsIWZG-AFh59dfLlIJSQ",
+                "markAsReadToken": "GjfpoDVIR9ZOOHSN9Zk39Gfcs2S9Ym1QFMpOBIH1jhudiLS5UCT-n0mruRud3YX3JaZy1BrzoQ_JmhroJr-w2hhp990TsbWndKX3q0iZGMKcXLiqkB3HzqJH2kav6J4gw51P0IAEfCRtO2yfzCN7eZwDJCfVGX1mqEznD0f3nPtpJ_dsOXsjZ12QRJtO_5OdTGNbVj1s9OOp2-UwjREktQ",
+                "text": "ทดสอบ"
+            },
+            "webhookEventId": "01KN9XA69SMF3J0J8KRBECZGH1",
+            "deliveryContext": {
+                "isRedelivery": false
+            },
+            "timestamp": 1775227967295,
+            "source": {
+                "type": "user",
+                "userId": "U118c9b67eaaa6d92ea82dbd6446a3f67"
+            },
+            "replyToken": "406ef006ee0a4ee494d1230274ca7769",
+            "mode": "active"
+        }
+    ]
+}
+2026-04-03 15:02:03.941 +00:00 [INF] Starting webhook
+2026-04-03 15:02:03.975 +00:00 [INF] request: {    "destination": "U92523a80a7528a55d42bd2c3c681f7ca",    "events": [        {            "type": "message",            "message": {                "type": "text",                "id": "608000709770084353",                "quoteToken": "_uvMi36y9b-b7_tGn0CcKlV8OZQ6N3-R2f9fZEdDna2meYsVheEP5oicJ0qJKz87hGGkNz6ZGr9Kzwyxyf2rVpi0FD4tl-mlZ6qsOGL_e85CZZKA22Ms5l83enFzBYqoQyEsIWZG-AFh59dfLlIJSQ",                "markAsReadToken": "GjfpoDVIR9ZOOHSN9Zk39Gfcs2S9Ym1QFMpOBIH1jhudiLS5UCT-n0mruRud3YX3JaZy1BrzoQ_JmhroJr-w2hhp990TsbWndKX3q0iZGMKcXLiqkB3HzqJH2kav6J4gw51P0IAEfCRtO2yfzCN7eZwDJCfVGX1mqEznD0f3nPtpJ_dsOXsjZ12QRJtO_5OdTGNbVj1s9OOp2-UwjREktQ",                "text": "ทดสอบ"            },            "webhookEventId": "01KN9XA69SMF3J0J8KRBECZGH1",            "deliveryContext": {                "isRedelivery": false            },            "timestamp": 1775227967295,            "source": {                "type": "user",                "userId": "U118c9b67eaaa6d92ea82dbd6446a3f67"            },            "replyToken": "406ef006ee0a4ee494d1230274ca7769",            "mode": "active"        }    ]}
+2026-04-03 15:02:06.183 +00:00 [INF] signature: avYJ4Am+amH4cnm6JV4qw34wWjvNAd07jGqK6gUerkM=
+2026-04-03 15:02:07.201 +00:00 [ERR] Invalid signature

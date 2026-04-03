@@ -23,7 +23,7 @@ Log.Logger = new LoggerConfiguration()
     .WriteTo.Console()
     .CreateLogger();
 
-builder.Services.AddScoped<IRecieveService, RecieveService>();
+builder.Services.AddScoped<IRecieveService, ReceiveService>();
 
 var app = builder.Build();
 

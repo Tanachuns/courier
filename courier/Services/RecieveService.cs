@@ -9,7 +9,7 @@ using Serilog;
 
 namespace courier.Services;
 
-public class RecieveService : IRecieveService
+public class ReceiveService : IRecieveService
 {
     public bool ValidateSignature(string body ,string signature)
     {

@@ -11,7 +11,7 @@ using Serilog;
 
 namespace courier.Controllers;
 
-public class HookController(IRecieveService recieveService) : Controller
+public class HookController(IRecieveService RecieveService) : Controller
 {
     [HttpGet(Name = "HealthCheck")]
     public IActionResult HealthCheck()
@@ -34,19 +34,19 @@ public class HookController(IRecieveService recieveService) : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public async Task<IActionResult> Index([FromBody] HookRequestDto request)
+    public async Task<IActionResult> Index([FromBody] object request)
     {
         BaseResponseModel response = new BaseResponseModel();
         try
         {
             Log.Information("Starting webhook");
-            string rawBody = JsonConvert.SerializeObject(request);
+            string rawBody = request.ToString().Replace("\r\n","");
             Log.Information("request: " + rawBody);
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
             Request.EnableBuffering();
            
             Log.Information("signature: " + signature);
-            if (string.IsNullOrEmpty(signature)||!recieveService.ValidateSignature(rawBody,signature))
+            if (string.IsNullOrEmpty(signature)||!RecieveService.ValidateSignature(rawBody,signature))
             {
                 Log.Error("Invalid signature");
                 response.isSuccess = false;
