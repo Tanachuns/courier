@@ -41,13 +41,13 @@ public class HookController(IRecieveService recieveService) : Controller
             Log.Information(JsonConvert.SerializeObject(requestDto));
             var signature = Request.Headers["x-line-signature"].FirstOrDefault();
 
-            // if (string.IsNullOrEmpty(signature)||recieveService.ValidateSignature(requestDto,signature))
-            // {
-            //     Log.Error("Invalid signature");
-            //     response.isSuccess = false;
-            //     response.message = "Invalid signature";
-            //     return BadRequest(response);
-            // }
+            if (string.IsNullOrEmpty(signature)||recieveService.ValidateSignature(requestDto,signature))
+            {
+                Log.Error("Invalid signature");
+                response.isSuccess = false;
+                response.message = "Invalid signature";
+                return BadRequest(response);
+            }
             Log.Error("Happy");
             response.isSuccess = true;
             response.data = requestDto;
