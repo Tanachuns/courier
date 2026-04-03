@@ -16,11 +16,11 @@ public class HookController : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public IActionResult Index([FromBody]HookRequestDto tt)
+    public IActionResult Index([FromBody]HookRequestDto requestDto)
     {
         try
         {
-            var st = JsonConvert.SerializeObject(tt);
+            var st = JsonConvert.SerializeObject(requestDto);
             Log.Information("hooked");            
             Log.Information(st);
             return Ok(tt);
