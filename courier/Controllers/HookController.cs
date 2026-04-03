@@ -1,6 +1,7 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Serilog;
 
 namespace courier.Controllers;
@@ -14,11 +15,13 @@ public class HookController : Controller
     }
     
     [HttpPost(Name = "Webhook")]
-    public IActionResult Post()
+    public IActionResult Post(object tt)
     {
         try
         {
-            Log.Information("hooked");
+            var st = JsonConvert.SerializeObject(tt);
+            Log.Information("hooked");            
+            Log.Information(st);
             return Ok(new { status = "hooked" });
         }
         catch (Exception e)
